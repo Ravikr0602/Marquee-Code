@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Marquee Code</title>
+</head>
+<body>
+    <!-- When you Clicking the Marquee -->
+    <h2> When you Clicking the Marquee </h2>
+
+    <marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start();">
+        Go on... click me (and hold the mouse down)!
+    </marquee>
+
+    <hr>
+    <!-- When you Hovering over the Marquee -->
+    <h2> When you Hovering over the Marquee  </h2>
+
+    <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        Go on... hover over me!
+    </marquee>
+
+    <hr>
+     <!-- When you enable Start/Stop Buttons: -->
+    <h2> When you enable Start/Stop Buttons: </h2>
+
+    <marquee behavior="scroll" direction="left" id="mymarquee">
+        <p>Go on... press the button!</p>
+        </marquee>
+        <input type="button" value="Stop Marquee" onClick="document.getElementById('mymarquee').stop();">
+        <input type="button" value="Start Marquee" onClick="document.getElementById('mymarquee').start();">
+
+
+     <hr>
+     <!-- Continuous scrolling text -->
+    <h2>  Continuous scrolling text </h2>
+    
+    <marquee behavior="scroll" direction="left">Your scrolling text goes here</marquee>
+    
+    <hr>
+    <!-- Continuous scrolling text right to left -->
+   <h2>  Continuous scrolling text right to left </h2>
+
+   <marquee behavior="alternate">Your bouncing text goes here</marquee>
+    
+   <hr>
+    <!-- Continuous scrolling text down to up -->
+   <h2>  Continuous scrolling text down to up </h2>
+
+   <marquee  behavior="scroll" direction="up">Your upward scrolling text goes here</marquee>
+</body>
+</html>
